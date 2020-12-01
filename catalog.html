@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <header>
     <div class="header-menu">
@@ -23,16 +25,30 @@
   <main>
     <section>
       <h2>Наши номера</h2>
-      <form action="">
-        <button><img src="img/filter.svg" alt="filter">Фильтры</button>
-        <button><select name="" id="">
-          <option value="По площади"><img src="img/arrow.svg" alt="arrow">По площади</option>
-          <option value="По цене">По цене</option>
-        </select></button>
-        По площади
+      <form class="form" method="get" id="filter-form" action="#">
+        <fieldset>
+          <button><img src="img/filter.svg" alt="filter">Фильтры</button>
+          <button>
+            <select name="" id="">
+              <option value="">&uarr; По площади</option>
+              <option value="">&darr; По площади</option>
+              <option value="">&uarr; По цене</option>
+              <option value="">&darr; По цене</option>
+            </select>
+          </button>
+        </fieldset>
+        <fieldset class="range">
+          <legend class="range-title">Цена за сутки,</legend>
+          <div class="range-filter">
+            <div class="price-controls">
+              <label class="min-price"><span>от</span><input name="min-price" type="text" value="100"></label>
+              <label class="max-price"><span>до</span><input name="max-price" type="text" value="600"></label>
+            </div>
+          </div>
+        </fieldset>
       </form>
-      
     </section>
   </main>
 </body>
+
 </html>
