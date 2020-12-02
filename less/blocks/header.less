@@ -1,0 +1,41 @@
+.header-wrapper {
+  padding: 0 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  
+}
+
+.header-menu {
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    width: 46px;
+    height: 38px;
+    cursor: pointer;
+  }
+}
+
+.toogle {
+  width: 22px;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: @color-white;
+  cursor: pointer;
+
+  .toogle-top,
+  .toogle-middle,
+  .toogle-bottom {
+    width: 22px;
+    height: 2px;
+    background-color: @color-black;
+  }
+}
