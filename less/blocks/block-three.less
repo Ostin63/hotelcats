@@ -1,7 +1,13 @@
 .block-three {
   padding-top: 70px;
-  text-align: center;
-  background: url('../img/fish.png') 33% 28% no-repeat;
+
+  .rooms-wrapper {
+    text-align: center;
+    background: url('../img/fish.png') 10% 10% no-repeat;
+    .pagination {
+      margin-top: 55px;
+    }
+  }
 }
 
 .cart-room {
@@ -40,27 +46,5 @@
   .button {
     margin: 0 auto;
     margin-top: 25px;
-  }
-}
-
-.pagination-three {
-  width: 60px;
-  margin: 0 auto;
-  margin-top: 55px;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-
-  li {
-    width: 11px;
-    height: 11px;
-    left: 0;
-    top: 2px;
-    border-radius: 50%;
-    background: @color-gray;
-  }
-
-  .ation {
-    background: @color-yellow;
   }
 }
