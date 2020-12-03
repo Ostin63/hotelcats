@@ -16,7 +16,12 @@
 <body>
   <header class="pege-wrapper">
     <div class=" header-menu container">
-    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+    <a href="index.html">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo-768.svg">
+        <img src="img/logo.svg" srcset="img/logo.svg" width="46" height="38" alt="logo">
+      </picture>
+    </a>
     <button class="modal__toogle toogle">
       <span class="toogle-top">-</span>
       <span class="toogle-middle">-</span>

@@ -4,6 +4,7 @@
   .rooms-wrapper {
     text-align: center;
     background: url('../img/fish.png') 10% 10% no-repeat;
+
     .pagination {
       margin-top: 55px;
     }
@@ -21,14 +22,18 @@
   }
 
   ul {
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: left;
 
     li {
       position: relative;
       padding-left: 19px;
       width: 140px;
-      margin-bottom: 17px;
+      margin-bottom: 5px;
+
+      p {
+        margin: 0;
+      }
 
       &::before {
         position: absolute;
@@ -46,5 +51,88 @@
   .button {
     margin: 0 auto;
     margin-top: 25px;
+  }
+}
+
+@media @tablet-widths {
+  .block-three {
+    padding-top: 100px;
+    .rooms-wrapper {
+      background: none;
+      background: url('../img/fish-768.png') 0 0% no-repeat;
+    }
+  }
+
+  .cart-room {
+    display: flex;
+
+    img {
+      margin-left: 45px;
+    }
+
+    .cart-info {
+      width: 345px;
+      height: 266px;
+      margin-top: 60px;
+      padding: 40px;
+      background: @color-white;
+      box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        width: 265px;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .block-three {
+    .rooms-wrapper {
+      background: none;
+      background: url('../img/fish-1366.png') 0 10% no-repeat;
+    }
+  }
+
+  .cart-room {
+    display: flex;
+
+    img {
+      margin-left: 45px;
+    }
+
+    .cart-info {
+      width: 345px;
+      height: 266px;
+      margin-top: 60px;
+      padding: 40px;
+      background: @color-white;
+      box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    ul {
+      padding-left: 0;
+
+      li {
+        width: 265px;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+      text-align: left;
+    }
   }
 }

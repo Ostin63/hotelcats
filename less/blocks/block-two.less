@@ -1,6 +1,6 @@
 .block-content {
   padding-top: 70px;
-  background: url("../img/paw-bg.svg") 100% 0% no-repeat;
+  background: url("../img/paw-bg.png") 100% 0% no-repeat;
 
   h2 {
     text-align: center;
@@ -11,7 +11,10 @@
   width: 290px;
   padding: 25px;
   margin: 0 auto;
+  margin-bottom: 30px;
   background: @color-white-white;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
   box-sizing: border-box;
 
   h3 {
@@ -20,5 +23,48 @@
 
   p {
     margin-top: 20px;
+  }
+}
+
+@media @tablet-widths {
+  .block-content {
+    padding-top: 120px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: url("../img/paw-bg-768.png") 100% 0% no-repeat;
+  }
+
+  .advantage {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .block-wrapper {
+    width: 324px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    h3 {
+      margin-top: 30px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .block-content {
+    width: 1170px;
+    padding-left: 98px;
+    padding-right: 98px;
+  }
+
+  .block-wrapper {
+    width: 370px;
+    margin-bottom: 20px;
   }
 }
