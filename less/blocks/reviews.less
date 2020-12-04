@@ -1,11 +1,8 @@
-.reviews {
-  margin-top: 50px;
-}
-
 .reviews-wrapper {
-  padding-top: 20px;
+  padding-top: 70px;
   text-align: center;
-  background: url("../img/paw-bg.svg") 100% 0% no-repeat;
+  background: url("../img/paw-reviews.png") 100% 10% no-repeat;
+
   .pagination {
     margin-top: 30px;
   }
@@ -15,7 +12,7 @@
   position: relative;
   width: 290px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 15px 21px 15px 56px;
   text-align: left;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -23,7 +20,7 @@
   background: @color-white-white;
   box-sizing: border-box;
 
-  span {
+  .quotes {
     position: absolute;
     left: 25px;
     top: 20px;
@@ -31,5 +28,41 @@
     font-size: 54px;
     font-weight: 500;
     line-height: 65px;
+  }
+
+  .autor-data {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .reviews-wrapper {
+    padding-top: 120px;
+    background: url("../img/paw-reviews-768.png") 100% 0% no-repeat;
+  }
+
+  .reviews-content {
+    width: 442px;
+    height: 210px;
+
+    .quotes {
+      font-size: 72px;
+      line-height: 86px;
+    }
+
+    .autor-data {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 17px;
+      color: @color-languid-gray;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reviews-wrapper {
+    background: url("../img/paw-reviews-1366.png") 100% 0% no-repeat;
+
   }
 }

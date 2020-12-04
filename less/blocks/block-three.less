@@ -54,12 +54,17 @@
   }
 }
 
+.arrows {
+  display: none;
+}
+
 @media @tablet-widths {
   .block-three {
     padding-top: 100px;
+
     .rooms-wrapper {
       background: none;
-      background: url('../img/fish-768.png') 0 0% no-repeat;
+      background: url('../img/fish-768.png') 0 10% no-repeat;
     }
   }
 
@@ -100,6 +105,7 @@
   .block-three {
     .rooms-wrapper {
       background: none;
+      padding-right: 168px;
       background: url('../img/fish-1366.png') 0 10% no-repeat;
     }
   }
@@ -108,31 +114,48 @@
     display: flex;
 
     img {
-      margin-left: 45px;
+      margin-top: 70px;
+      margin-left: 168px;
     }
 
     .cart-info {
-      width: 345px;
-      height: 266px;
-      margin-top: 60px;
-      padding: 40px;
-      background: @color-white;
-      box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
-      border-radius: 8px;
-      box-sizing: border-box;
+      width: 500px;
+      height: 284px;
+      margin-top: 120px;
+      padding-left: 100px;
     }
 
-    ul {
-      padding-left: 0;
+    .button {
+      margin-left: 0;
+    }
+  }
 
-      li {
-        width: 265px;
+  .block-pagination {
+    display: flex;
+
+    .arrows {
+      width: 82px;
+      margin-top: 37px;
+      display: flex;
+      justify-content: space-between;
+
+      .arrow {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: @color-white-white;
+        box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+        cursor: pointer;
       }
-    }
 
-    h3 {
-      margin-top: 0;
-      text-align: left;
+      .left {
+        background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.00024 1L1.00024 5L5.00024 9' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% no-repeat;
+      }
+
+      .right {
+        background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9L5 5L1 1' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% 50% no-repeat;
+      }
     }
   }
 }

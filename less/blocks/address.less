@@ -4,6 +4,7 @@
 
 .address-wrapper {
   padding-top: 40px;
+  padding-bottom: 40px;
   background: @color-yellow;
 
   h2 {
@@ -14,7 +15,7 @@
   .block {
     width: 220px;
     margin-left: 15px;
-    margin-top: 30px;
+    margin-top: 19px;
 
     b {
       font-weight: bold;
@@ -22,26 +23,68 @@
       line-height: 18px;
     }
   }
+}
 
-  .social-network {
-    ul {
-      width: 108px;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
+.social-network {
+  ul {
+    width: 108px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
 
-      li {
-        cursor: pointer;
-      }
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.map {
+  position: relative;
+
+  .map-cat {
+    position: absolute;
+    top: 109px;
+    left: 125px;
+  }
+}
+
+@media @tablet-widths {
+  .address-block {
+    display: flex;
+  }
+
+  .address-wrapper {
+    width: 369px;
+    height: 522px;
+    box-sizing: border-box;
+  }
+
+  .map {
+    .map-cat {
+      top: 209px;
+      left: 160px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .address-wrapper {
+    width: 568px;
+    height: 580px;
+    padding-top: 70px;
+    padding-left: 198px;
+
+    .block {
+      margin-top: 15px;
     }
   }
 
   .map {
-    position: relative;
     .map-cat {
-      position: absolute;
-      top: 109px;
-      left: 139px;
+      top: 240px;
+      left: 247px;
     }
   }
 }
