@@ -433,6 +433,12 @@ template {
   padding: 0;
   border: 0;
 }
+.show {
+  display: block;
+}
+.d-none {
+  display: none;
+}
 .pege-wrapper {
   background: #FFFEFD;
   font-weight: 400;
@@ -474,7 +480,7 @@ a {
 ul {
   list-style: none;
 }
-.pagination {
+.owl-dots {
   width: 60px;
   margin: 0 auto;
   padding: 0;
@@ -485,15 +491,22 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.pagination li {
+.owl-dots .owl-dot span {
   width: 11px;
   height: 11px;
+  display: block;
   left: 0;
   top: 2px;
   border-radius: 50%;
   background: #E1E1E1;
 }
-.pagination .action {
+.owl-dots .owl-dot:focus {
+  outline: none;
+}
+.owl-dots .owl-dot.active {
+  outline: none;
+}
+.owl-dots .owl-dot.active span {
   background: #FAC663;
 }
 .button {
@@ -520,6 +533,9 @@ ul {
   margin-left: 45px;
 }
 .button:focus {
+  outline: none;
+}
+button:focus {
   outline: none;
 }
 .pink {
@@ -692,7 +708,7 @@ ul {
   text-align: center;
   background: url("../img/paw-reviews.png") 100% 10% no-repeat;
 }
-.reviews-wrapper .pagination {
+.reviews-wrapper .owl-dots {
   margin-top: 30px;
 }
 .reviews-content {
@@ -801,6 +817,16 @@ ul {
   font-size: 12px;
   line-height: 14px;
   color: #8F8F8F;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 254, 253, 0.8);
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .container {

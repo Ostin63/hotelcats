@@ -1,3 +1,11 @@
+.show {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
 .pege-wrapper {
   background: @color-white;
   font-weight: 400;
@@ -45,24 +53,36 @@ ul {
   list-style: none;
 }
 
-.pagination {
+.owl-dots {
   width: 60px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
 
-  li {
-    width: 11px;
-    height: 11px;
-    left: 0;
-    top: 2px;
-    border-radius: 50%;
-    background: @color-gray;
-  }
+  .owl-dot {
+    span {
+      width: 11px;
+      height: 11px;
+      display: block;
+      left: 0;
+      top: 2px;
+      border-radius: 50%;
+      background: @color-gray;
+    }
 
-  .action {
-    background: @color-yellow;
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      outline: none;
+
+
+      span {
+        background: @color-yellow;
+      }
+    }
   }
 }
 
@@ -90,7 +110,7 @@ ul {
 }
 
 @media @desktop-widths {
-    h3 {
+  h3 {
     font-weight: 500;
     font-size: 22px;
     line-height: 120%;
