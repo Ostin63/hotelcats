@@ -4,15 +4,13 @@
   .rooms-wrapper {
     text-align: center;
     background: url('../img/fish.png') 10% 10% no-repeat;
-
-    .pagination {
-      margin-top: 55px;
-    }
   }
 }
 
 .cart-room {
   img {
+    width: 290px;
+    height: 192px;
     margin: 0 auto;
     margin-top: 40px;
   }
@@ -54,9 +52,6 @@
   }
 }
 
-.arrows {
-  display: none;
-}
 
 @media @tablet-widths {
   .block-three {
@@ -68,17 +63,19 @@
     }
   }
 
-  .cart-room {
+  .block-room {
     display: flex;
 
     img {
+      width: 442px;
+      height: 326px;
       margin-left: 45px;
     }
 
     .cart-info {
       width: 345px;
       height: 266px;
-      margin-top: 60px;
+      margin-top: 70px;
       padding: 40px;
       background: @color-white;
       box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -99,6 +96,10 @@
       text-align: left;
     }
   }
+
+  .owl-dots {
+    margin-top: 55px;
+  }
 }
 
 @media @desktop-widths {
@@ -110,10 +111,12 @@
     }
   }
 
-  .cart-room {
+  .block-room {
     display: flex;
 
     img {
+      width: 600px;
+      height: 404px;
       margin-top: 70px;
       margin-left: 168px;
     }
@@ -130,32 +133,7 @@
     }
   }
 
-  .block-pagination {
-    display: flex;
-
-    .arrows {
-      width: 82px;
-      margin-top: 37px;
-      display: flex;
-      justify-content: space-between;
-
-      .arrow {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        margin: 0 auto;
-        background: @color-white-white;
-        box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
-        cursor: pointer;
-      }
-
-      .left {
-        background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.00024 1L1.00024 5L5.00024 9' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% no-repeat;
-      }
-
-      .right {
-        background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 9L5 5L1 1' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% 50% no-repeat;
-      }
-    }
+  .owl-dots {
+    margin-top: -23px;
   }
 }

@@ -86,6 +86,43 @@ ul {
   }
 }
 
+.owl-carousel {
+  .owl-nav {
+    width: 82px;
+    margin-top: 43px;
+    margin-left: 1120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .owl-prev {
+      background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1L1 5L5 9' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% no-repeat !important;
+      background-size: cover;
+    }
+
+    .owl-next {
+      background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 8.99951L5 4.99951L1 0.999512' stroke='%23FF7236' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") 50% 50% no-repeat !important;
+      background-size: cover;
+    }
+
+    .owl-prev,
+    .owl-next {
+      width: 36px;
+      height: 36px;
+      display: block;
+      border-radius: 50%;
+      margin: 0 auto;
+      background-color: @color-white-white;
+      box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+      cursor: pointer;
+    }
+  }
+}
+
+fieldset {
+  border: 0;
+}
+
 @media @tablet-widths {
   h1 {
     font-size: 62px;
@@ -120,4 +157,5 @@ ul {
     font-size: 16px;
     line-height: 140%;
   }
+
 }
