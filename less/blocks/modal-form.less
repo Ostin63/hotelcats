@@ -13,7 +13,8 @@
   box-sizing: border-box;
   z-index: 15;
 
-  .close {
+
+  .form-close {
     position: relative;
     width: 16px;
     height: 16px;
@@ -144,4 +145,35 @@
 
 .checkbox-other input[type=checkbox]:checked+span:before {
   background: url(../img/checkbox.png) 50% 50% no-repeat;
+}
+
+@media @tablet-widths {
+  .modal-form {
+    left: calc(50% - 290px / 2);
+  }
+}
+
+@media @desktop-widths {
+  .modal-form {
+    display: block;
+    position: absolute;
+    box-shadow: none;
+    top: 167px;
+    left: calc(50% - 608px);
+
+    .form-close {
+      display: none;
+    }
+
+    .range-title {
+      p {
+        position: static;
+      }
+    }
+
+    .btn-yellow {
+      display: none;
+    }
+  }
+
 }
