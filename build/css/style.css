@@ -588,9 +588,6 @@ button:focus {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-.catalog {
-  background: #E5E5E5;
-}
 .header-menu {
   width: 100%;
   display: -webkit-box;
@@ -903,6 +900,9 @@ button:focus {
   border: none;
   outline: none;
   border: transparent;
+}
+.top-form .select select option {
+  border: 0;
 }
 .catalog-cart {
   width: 290px;
