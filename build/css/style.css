@@ -1,14 +1,3 @@
-/*@font-face {
-  font-family: 'Lato', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local("Open Sans Bold"),
-    local("OpenSans-Bold"),
-    url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-}*/
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -1111,6 +1100,37 @@ button:focus {
   margin-top: 30px;
   margin: 0 auto;
 }
+.room-cart {
+  width: 320px;
+  padding: 0 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.room-cart .block-img .previewe-slider {
+  margin-top: 16px;
+}
+.room-cart .block-img .previewe-slider .img-previewe {
+  padding: 0 8px;
+}
+.room-cart .cart-param {
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.room-cart .cart-param .pink {
+  width: 290px;
+  height: 50px;
+  padding-left: 76px;
+  padding-top: 13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.room-cart .cart-param .pink span {
+  margin-top: -6px;
+  margin-left: 62px;
+}
 .modal-menu {
   position: fixed;
   top: 0;
@@ -1458,6 +1478,7 @@ button:focus {
             box-sizing: border-box;
   }
   .numbers {
+    padding: 0 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1513,6 +1534,46 @@ button:focus {
     margin-top: 35px;
     margin-left: 50px;
   }
+  .room-cart {
+    width: 768px;
+    padding: 0 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .room-cart .block-img {
+    width: 354px;
+  }
+  .room-cart .block-img .previewe-slider {
+    margin-top: 16px;
+  }
+  .room-cart .block-img .previewe-slider .img-previewe {
+    padding: 0 8px;
+  }
+  .room-cart .equipment-icon {
+    margin-right: 10px;
+  }
+  .room-cart .cart-param {
+    padding: 0;
+    height: 387px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .room-cart .cart-param h3 {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 @media (min-width: 1366px) {
   .container {
@@ -1566,7 +1627,6 @@ button:focus {
   }
   .block-three .rooms-wrapper {
     background: none;
-    padding-right: 168px;
     background: url('../img/fish-1366.png') 0 10% no-repeat;
   }
   .block-room {
@@ -1622,6 +1682,7 @@ button:focus {
     padding-right: 98px;
   }
   .numbers {
+    width: 1366px;
     padding: 0 98px;
   }
   .numbers .form {
@@ -1694,5 +1755,36 @@ button:focus {
   .stock .button {
     margin-top: 35px;
     margin-left: 270px;
+  }
+  .room-cart {
+    width: 1366px;
+    height: 398px;
+    padding: 0 98px;
+  }
+  .room-cart .block-img {
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .room-cart .block-img .top-slider {
+    width: 500px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .room-cart .block-img .previewe-slider {
+    width: 70px;
+    margin-top: 0;
+  }
+  .room-cart .block-img .previewe-slider .img-previewe {
+    padding: 30px 0;
+    padding-top: 0;
+  }
+  .room-cart .cart-param {
+    margin-right: 199px;
   }
 }

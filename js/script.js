@@ -24,7 +24,7 @@ $(document).ready(function () {
 		dots: true,
 		autoplay: false,
 		center: true,
-		dotsEach: 3,
+		dotsEach: true,
 		responsive: {
 
 			320: {
