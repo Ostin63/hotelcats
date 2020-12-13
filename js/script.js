@@ -96,20 +96,20 @@ $(document).ready(function () {
 			}
 		} 
 	});
+
 	$('#phone').mask("+7(999)999-9999", {
 		autoclear: false
 	});
-	$("#dmin").datepicker($.datepicker.regional["ru"]);
-	$("#dmax").datepicker($.datepicker.regional["ru"]);
+	$(".date").datepicker($.datepicker.regional["ru"]);
 
 	// Спасибо за заявку
-
+/*
 	$('#form').validator().on('.application', function (e) {
 		if (!e.isDefaultPrevented()) {
 			$('.modal-reservation').addClass('d-none');
 			$('.modal-thank-you').removeClass('d-none');
 		}
-	});
+	});*/
 	
 	$('.closed').click(function () {
 		$('.modal-thank-you').addClass('d-none');

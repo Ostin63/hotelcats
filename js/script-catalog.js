@@ -64,8 +64,7 @@ $(document).ready(function () {
   $('#phone').mask("+7(999)999-9999", {
     autoclear: false
   });
-  $("#dmin").datepicker($.datepicker.regional["ru"]);
-  $("#dmax").datepicker($.datepicker.regional["ru"]);
+  $(".date").datepicker($.datepicker.regional["ru"]);
 
   // Спасибо за заявку
 /*

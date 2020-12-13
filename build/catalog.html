@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
   <link rel="shortcut icon" href="img/icon.svg">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -156,12 +157,12 @@
           <div class="form-input">
             <label class="min-data" for="dmin"></label>
             <span>с</span>
-            <input name="min-data" type="text" value="" placeholder="26.01.2020" name="datamin" id="dmin">
+            <input class="date" type="text" value="" placeholder="26.01.2020" name="datamin" id="dmin" autocomplete="off">
           </div>
           <div class="form-input">
             <label class="max-data" for="dmax"></label>
             <span>по</span>
-            <input name="max-data" type="text" value="" placeholder="26.02.2020" name="datamax" id="dmax">
+            <input class="date" type="text" value="" placeholder="26.02.2020" name="datamax" id="dmax" autocomplete="off">
           </div>
         </div>
       </div>
@@ -854,9 +855,9 @@
   <div class="modal-overlay d-none"></div>
   <script src="js/jQuery3.3.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-  <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/i18n/jquery-ui-i18n.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery-ui-i18n.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
   <script src="js/script-catalog.js"></script>
 </body>
 

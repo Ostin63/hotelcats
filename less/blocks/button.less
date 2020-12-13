@@ -1,9 +1,17 @@
+button {
+  font-family: inherit;
+}
+input {
+  outline: none;
+}
+
 .button {
+  position: relative;
   height: 50px;
   display: flex;
   border: 0;
   border-radius: 25px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 20px;
   padding-left: 49px;
   font-weight: 600;
@@ -14,9 +22,9 @@
   box-sizing: border-box;
 
   span {
-    margin-top: -8px;
-    margin-right: 2px;
-    margin-left: 45px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
   }
 
   &:focus {
