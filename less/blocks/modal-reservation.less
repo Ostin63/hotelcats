@@ -1,0 +1,226 @@
+.modal-reservation {
+  position: fixed;
+  width: 290px;
+  height: 656px;
+  top: 70px;
+  left: calc(50% - 290px / 2);
+  padding: 50px 15px;
+  padding-top: 20px;
+  background: @color-white-white;
+  box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+  box-sizing: border-box;
+  z-index: 15;
+
+  .reservation-close {
+    position: relative;
+    left: 240px;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    background: @color-white-white;
+    display: block;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 0;
+      width: 15px;
+      height: 2px;
+      background: @color-black;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  h3 {
+    width: 191px;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .form-input {
+    position: relative;
+    margin-top: 20px;
+
+    .input-text {
+      width: 260px;
+      height: 52px;
+      padding-left: 20px;
+      border: 1px solid #D7D7D7;
+      box-sizing: border-box;
+      border-radius: 25px;
+      outline: none;
+
+      &::placeholder {
+        color: @color-black;
+      }
+
+      &.error {
+        border: 1px solid @color-pink;
+      }
+    }
+
+    label.error {
+      position: absolute;
+      width: 100%;
+      bottom: -17px;
+      left: 50px;
+      color: @color-pink;
+    }
+  }
+}
+
+.arrival-date {
+  margin-top: 20px;
+}
+
+.price-controls {
+  display: flex;
+
+  .form-input {
+    margin-top: 0;
+
+    input {
+      width: 107px;
+      height: 52px;
+      padding-left: 15px;
+      margin-left: 5px;
+      border: 1px solid #D7D7D7;
+      box-sizing: border-box;
+      border-radius: 25px;
+      outline: none;
+    }
+  }
+}
+
+.application {
+  width: 260px;
+  margin-top: 35px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+
+  input {
+    border: none;
+    color: @color-white-white;
+    background: @color-pink;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media @tablet-widths {
+  .modal-reservation {
+    width: 502px;
+    height: 629px;
+    top: 136px;
+    left: calc(50% - 502px / 2);
+    padding: 50px 30px;
+    padding-top: 20px;
+    background: url("../img/paw-book-768.jpg") 50% 50% no-repeat;
+
+    .reservation-close {
+      position: relative;
+      left: 435px;
+    }
+
+    h3 {
+      width: 100%;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    .form-input {
+      .input-text {
+        width: 442px;
+      }
+    }
+  }
+
+  .arrival-date {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    p {
+      margin: 0;
+      align-self: center;
+    }
+  }
+
+  .max-data {
+    margin-left: 16px;
+  }
+
+  .price-controls {
+    input {
+      width: 132px;
+      padding-left: 17px;
+    }
+  }
+
+  .application {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media @desktop-widths {
+  .modal-reservation {
+    width: 572px;
+    height: 649px;
+    top: 146px;
+    left: calc(50% - 502px / 2);
+    padding: 40px 70px;
+    background: url("../img/paw-book-1366.jpg") 100% 100% no-repeat;
+
+    h3 {
+      width: 100%;
+      margin-top: 14px;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    .input-text {
+      width: 430px;
+    }
+  }
+
+  .arrival-date {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .max-data {
+    margin-left: 16px;
+  }
+
+  .price-controls {
+    input {
+      width: 129px;
+      height: 52px;
+      padding-left: 17px;
+    }
+  }
+
+  .application {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}

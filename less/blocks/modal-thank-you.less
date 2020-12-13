@@ -1,0 +1,104 @@
+.modal-thank-you {
+  position: fixed;
+  width: 290px;
+  height: 277px;
+  top: 80px;
+  padding: 40px 27px;
+  left: calc(50% - 290px / 2);
+  background: @color-white-white;
+  box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 15;
+
+  .closed {
+    position: relative;
+    left: 230px;
+    top: -20px;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    background: @color-white-white;
+    display: block;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      top: 8px;
+      left: 0;
+      width: 15px;
+      height: 2px;
+      background: @color-black;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .ok {
+    width: 122px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding-left: 34px;
+    box-sizing: border-box;
+
+    span {
+      margin-left: 24px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .modal-thank-you {
+    width: 502px;
+    height: 269px;
+    padding: 70px 98px;
+    padding-top: 25px;
+    left: calc(50% - 502px / 2);
+    background: url('../img/paw-thank-you-768.jpg') 100% 0 no-repeat;
+
+    .closed {
+      top: 0;
+      left: 360px;
+    }
+
+    h3 {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .ok {
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  width: 1366px;
+  padding: 0;
+}

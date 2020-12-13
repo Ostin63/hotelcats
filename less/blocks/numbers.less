@@ -63,8 +63,8 @@
     position: relative;
     width: 16px;
     height: 16px;
-    top: -40px;
-    left: 260px;
+    top: -30px;
+    left: 230px;
     border: 0;
     background: @color-white-white;
     display: block;
@@ -93,7 +93,7 @@
   .range-title {
     p {
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 25px;
     }
   }
@@ -135,18 +135,21 @@
   }
 }
 
-.price-controls {
+.price-controls-filter {
+  width: 240px;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 
-  input {
+  .input-filter {
     width: 99px;
     height: 36px;
     border: 1px solid @color-gray;
+    box-sizing: border-box;
   }
 
   .max-price {
-    margin-right: 53px;
+    margin-right: 32px;
   }
 }
 
@@ -226,6 +229,7 @@
   .numbers {
     width: 1366px;
     padding: 0 98px;
+    box-sizing: border-box;
 
     .form {
       display: flex;
