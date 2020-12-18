@@ -838,6 +838,7 @@ fieldset {
   border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: none;
   z-index: 15;
 }
 .modal-form .form-close {
@@ -913,6 +914,9 @@ fieldset {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 25px;
+}
+.d-block {
+  display: block;
 }
 .price-controls-filter {
   width: 240px;

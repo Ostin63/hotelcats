@@ -20,11 +20,11 @@ $(document).ready(function () {
     $('.modal-overlay').addClass('d-none');
   });
   $('.left-filter').click(function () { 
-    $('.form .modal-form').removeClass('d-none');
+    $('.form .modal-form').addClass('d-block');
     $('.modal-overlay').removeClass('d-none');
   });
   $('.form-close').click(function () {
-    $('.form .modal-form').addClass('d-none');
+    $('.form .modal-form').removeClass('d-block');
     $('.modal-overlay').addClass('d-none');
   });
 
@@ -39,7 +39,8 @@ $(document).ready(function () {
     $('.modal-reservation').addClass('d-none');
     $('.modal-overlay').addClass('d-none');
   });
-  $('#form').validate({
+  
+  /*$('#form').validate({
     rules: {
       fname: {
         required: true,
@@ -60,20 +61,20 @@ $(document).ready(function () {
         checkMask: "Введите полный номер телефона"
       }
     }
-  });
+  });*/
   $('#phone').mask("+7(999)999-9999", {
     autoclear: false
   });
   $(".date").datepicker($.datepicker.regional["ru"]);
 
   // Спасибо за заявку
-/*
-  $('#form').validator().on('.application', function (e) {
+
+  $('#form').validator().on('submit', function (e) {
     if (!e.isDefaultPrevented()) {
       $('.modal-reservation').addClass('d-none');
       $('.modal-thank-you').removeClass('d-none');
     }
-  });*/
+  });
   $('.closed').click(function () {
     $('.modal-thank-you').addClass('d-none');
     $('.modal-overlay').addClass('d-none');
@@ -82,20 +83,18 @@ $(document).ready(function () {
     $('.modal-thank-you').addClass('d-none');
     $('.modal-overlay').addClass('d-none');
   });
-
+/*
   function checkWidth() {
     let windowWidth = $('body').innerWidth(),
       overlay = $('.modal-overlay');
       modalForm = $(".modal-form");
     if (windowWidth > 1366) {
-      modalForm.removeClass('d-none');
+      modalForm.removeClass('d-block');
       overlay.addClass('d-none');
-    } else {
-      modalForm.addClass('d-none');
     }
   }
   checkWidth(); // проверит при загрузке страницы
   $(window).resize(function () {
     checkWidth(); // проверит при изменении размера окна клиента
-  });
+  });*/
 });
