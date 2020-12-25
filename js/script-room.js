@@ -6,7 +6,6 @@ $(document).ready(function () {
 		arrows: false,
 		fade: true,
 		asNavFor: '.previewe-slider'
-		
 	});
 	$('.previewe-slider').slick({
 		slidesToShow: 3,

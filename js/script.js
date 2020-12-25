@@ -9,7 +9,7 @@ $(document).ready(function () {
 		center: true,
 		items: 1,
 		responsive: {
-			1366: {
+			1384: {
 				nav: true,
 				navText: true,
 				navigation: true,
@@ -31,12 +31,12 @@ $(document).ready(function () {
 				items: 1
 			},
 
-			768: {
+			786: {
 				items: 1.5,
 				margin: 30,
 				center: false
 			},
-			1366: {
+			1384: {
 				items: 2.5,
 				margin: 30,
 				center: false,
@@ -74,6 +74,10 @@ $(document).ready(function () {
 		$('.modal-overlay').addClass('d-none');
 	});
 
+	jQuery.validator.addMethod("checkMask", function (value, element) {
+		return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value);
+	});
+	
 	$('#form').validate({
 		rules: {
 			fname: {

@@ -1370,7 +1370,7 @@ fieldset {
   background: rgba(255, 254, 253, 0.8);
   z-index: 10;
 }
-@media (min-width: 768px) {
+@media (min-width: 786px) {
   .container {
     width: 768px;
     padding: 0;
@@ -1795,7 +1795,7 @@ fieldset {
     margin-top: 50px;
   }
 }
-@media (min-width: 1366px) {
+@media (min-width: 1384px) {
   .container {
     width: 1366px;
     padding: 0;
