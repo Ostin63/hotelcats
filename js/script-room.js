@@ -16,13 +16,13 @@ $(document).ready(function () {
 		vertical: true,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 786,
 				settings: {
 					vertical: false,
 				}
 			},
 			{
-				breakpoint: 1366,
+				breakpoint: 1384,
 				settings: {
 					vertical: false,
 				}
@@ -40,7 +40,7 @@ $(document).ready(function () {
 		center: true,
 		items: 1,
 		responsive: {
-			1366: {
+			1384: {
 				nav: true,
 				navText: true,
 				navigation: true,
