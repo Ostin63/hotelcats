@@ -4,9 +4,9 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 # Node artifact files
-gulpfile.js
+
 package-lock.json
-package.json
+
 node_modules/
 dist/
 

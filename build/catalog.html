@@ -157,17 +157,19 @@
           <div class="form-input">
             <label class="min-data" for="dmin"></label>
             <span>с</span>
-            <input class="date" type="text" value="" placeholder="26.01.2020" name="datamin" id="dmin" autocomplete="off">
+            <input class="date" type="text" value="" placeholder="26.01.2020" name="datamin" id="dmin"
+              autocomplete="off">
           </div>
           <div class="form-input">
             <label class="max-data" for="dmax"></label>
             <span>по</span>
-            <input class="date" type="text" value="" placeholder="26.02.2020" name="datamax" id="dmax" autocomplete="off">
+            <input class="date" type="text" value="" placeholder="26.02.2020" name="datamax" id="dmax"
+              autocomplete="off">
           </div>
         </div>
       </div>
-      <button class="button pink application" name="form" type="submit">
-        <input type="submit" value="Забронировать">
+      <button class="button pink application" type="submit">
+        Забронировать
         <span>
           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -230,23 +232,23 @@
     <section class="container">
       <div class="numbers">
         <h2>Наши номера</h2>
-        <form class="form" method="get" id="filter-form" action="#">
+        <form class="form" id="filter-form" action="#" autocomplete="off">
           <fieldset class="top-form">
-            <button class="left-filter"><span>
+            <button class="left-filter">
+              <span>
                 <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.5 8.68421L0 1.57895V0H12V1.57895L7.5 8.68421V13.4211L4.5 15V8.68421Z" fill="#1A212F" />
                 </svg>
-              </span>Фильтры</button>
-            <button class="select">
-              <select name="" id="">
-                <option value="">&uarr; По площади</option>
-                <option value="">&darr; По площади</option>
-                <option value="">&uarr; По цене</option>
-                <option value="">&darr; По цене</option>
-              </select>
+              </span>
+              Фильтры
             </button>
+            <select class="select" name="area" id="area">
+              <option value="area" selected>&darr; По площади</option>
+              <option value="minPrice">&uarr; По цене</option>
+              <option value="maxPrice">&darr; По цене</option>
+            </select>
           </fieldset>
-          <fieldset class="modal-form">
+          <fieldset class="modal-form d-none">
             <button class="form-close"></button>
             <legend class="range-title">
               <p>Цена за сутки,₽</p>
@@ -261,37 +263,37 @@
             <ul class="size">
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="area-size" checked>
                   <span>0,63 м2</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="area-size" checked>
                   <span>0,90 м2</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="area-size" checked>
                   <span>1,13 м2</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="area-size" checked>
                   <span>1,56 м2</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="area-size" checked>
                   <span>2,56 м2</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="area-size" checked>
                   <span>2,88 м2</span>
                 </label>
               </li>
@@ -300,37 +302,37 @@
             <ul class="equipment">
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="features" checked>
                   <span>Пустой номер</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="features" checked>
                   <span>Лежак</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="features" checked>
                   <span>Когтеточка</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="features" checked>
                   <span>Игровой-комплекс</span>
                 </label>
               </li>
               <li>
                 <label class="checkbox-other">
-                  <input type="checkbox" checked>
+                  <input type="checkbox" name="features" checked>
                   <span>Домик</span>
                 </label>
               </li>
             </ul>
-            <input class="button btn-yellow" type="submit" value="Подобрать">
-            <input class="button btn-white" type="reset" value="Сбросить фильтр">
+            <button class="button btn-yellow" type="button">Подобрать</button>
+            <button class="button btn-white" type="reset" name="">Сбросить фильтр</>
           </fieldset>
         </form>
       </div>

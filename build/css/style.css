@@ -838,7 +838,6 @@ fieldset {
   border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: none;
   z-index: 15;
 }
 .modal-form .form-close {
