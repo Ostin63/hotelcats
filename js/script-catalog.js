@@ -8,11 +8,15 @@ $(document).ready(function () {
     $('.modal-overlay').addClass('d-none');
   };
   const onAddForm = () => {
-    $('.form .modal-form').addClass('d-block');
+    $('.form .modal-form')
+      .removeClass('d-none')
+      .addClass('z-index');
     $('.modal-overlay').removeClass('d-none');
   };
   const onCloseForm = () => {
-    $('.form .modal-form').removeClass('d-block');
+    $('.form .modal-form')
+      .addClass('d-none')
+      .removeClass('z-index');
     $('.modal-overlay').addClass('d-none');
   };
   const onAddReservationMenu = () => {
@@ -35,13 +39,13 @@ $(document).ready(function () {
   $('.left-filter').click(onAddForm);
   $('.form-close').click(onCloseForm);
   $('.btn-yellow').click(onCloseForm);
- 
-  $(window).resize(function () {
-    const win = $(this);
-    if (win.width() >= 1384) {
-      onCloseForm();
-    }
-  });
+
+    $(window).resize(function () {
+      const win = $(this);
+      if (win.width() >= 1384) {
+        onCloseForm();
+      }
+    });
 
   $('#filter-form').submit(function (evt) {
     evt.preventDefault()
@@ -54,7 +58,7 @@ $(document).ready(function () {
 
   $('.book').click(onAddReservationMenu);
   $('.reservation-close').click(onCloseReservationMenu);
-  
+
   $('#form').validate({
     rules: {
       fname: {

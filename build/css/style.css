@@ -838,7 +838,6 @@ fieldset {
   border-radius: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 15;
 }
 .modal-form .form-close {
   position: relative;
@@ -913,6 +912,9 @@ fieldset {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 25px;
+}
+.z-index {
+  z-index: 15;
 }
 .d-block {
   display: block;
@@ -2053,6 +2055,4 @@ fieldset {
     margin: 0 auto;
     margin-top: 50px;
   }
-  width: 1366px;
-  padding: 0
 }
