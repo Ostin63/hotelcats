@@ -134,7 +134,7 @@
   <div class="modal-reservation d-none">
     <button class="reservation-close"></button>
     <h3>Забронировать номер</h3>
-    <form method="POST" id="form" action="#" enctype="multipart/form-data">
+    <form method="POST" id="form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data">
       <div class="form-input">
         <label for="name"></label>
         <input class="input-text" type="text" value="" placeholder="Ваше имя" id="name" name="fname" required>
@@ -198,6 +198,7 @@
       </button>
     </form>
   </div>
+
   <div class="modal-thank-you d-none">
     <button class="closed"></button>
     <h3>Спасибо за заявку!</h3>
@@ -228,6 +229,7 @@
         </svg>
       </span></a>
   </div>
+
   <main>
     <section class="container">
       <div class="numbers">
@@ -848,6 +850,11 @@
         </div>
       </div>
   </footer>
+
+  <div class="error-loading">
+    <p class="error-loading__message">Форма не отправлена,<br>попробуйте позже! :)</p>
+  </div>
+
   <div class="modal-overlay d-none"></div>
   <script src="js/jQuery3.3.1.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
