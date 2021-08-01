@@ -1172,7 +1172,7 @@ fieldset {
   position: fixed;
   width: 290px;
   height: 656px;
-  top: 70px;
+  top: 0;
   left: calc(50% - 290px / 2);
   padding: 50px 15px;
   padding-top: 20px;
@@ -1749,6 +1749,9 @@ fieldset {
   .room-cart .cart-param h3 {
     font-size: 36px;
     line-height: 43px;
+  }
+  .modal-reservation {
+    top: 70px;
   }
   .modal-reservation {
     width: 502px;

@@ -2,7 +2,7 @@
   position: fixed;
   width: 290px;
   height: 656px;
-  top: 70px;
+  top: 0;
   left: calc(50% - 290px / 2);
   padding: 50px 15px;
   padding-top: 20px;
@@ -11,7 +11,9 @@
   box-sizing: border-box;
   z-index: 15;
 
-  .reservation-close {
+  @media @tablet-widths{
+    top: 70px;
+  } .reservation-close {
     position: relative;
     left: 240px;
     width: 16px;
