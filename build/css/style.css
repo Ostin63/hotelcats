@@ -332,17 +332,21 @@ input {
 .button {
   position: relative;
   height: 50px;
+  padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 0;
   border-radius: 25px;
-  padding-top: 14px;
-  padding-bottom: 20px;
-  padding-left: 49px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 16px;
   font-family: 'Lato', 'Roboto', sans-serif;
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -575,8 +579,6 @@ fieldset {
   width: 206px;
   margin: 0 auto;
   margin-top: 40px;
-  padding-top: 15px;
-  padding-left: 30px;
   line-height: 19px;
   font-size: 16px;
 }
@@ -886,8 +888,7 @@ fieldset {
   height: 42px;
   margin: 0 auto;
   margin-top: 35px;
-  padding-top: 10px;
-  padding-left: 84px;
+  padding: 0;
   background: #FAC663;
   font-weight: 600;
   font-size: 14px;
@@ -901,8 +902,7 @@ fieldset {
   height: 42px;
   margin: 0 auto;
   margin-top: 15px;
-  padding-top: 8px;
-  padding-left: 60px;
+  padding: 0;
   border: 2px solid #FAC663;
   background: #FFFFFF;
   font-weight: 600;
