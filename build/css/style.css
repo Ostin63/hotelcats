@@ -907,7 +907,7 @@ fieldset {
   background: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 14px;
   font-family: 'Lato', 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1967,7 +1967,6 @@ fieldset {
   .modal-form .btn-white {
     width: 185px;
     height: 42px;
-    padding-left: 30px;
     background: none;
   }
   .price-controls input {
