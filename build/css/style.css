@@ -731,15 +731,10 @@ fieldset {
   cursor: pointer;
   border-radius: 24px;
 }
-.map {
+.contacts__map {
   width: 320px;
   height: 300px;
   position: relative;
-}
-.map .map-cat {
-  position: absolute;
-  top: 109px;
-  left: 125px;
 }
 .footer-wrapper {
   padding-top: 30px;
@@ -1570,13 +1565,9 @@ fieldset {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .map {
+  .contacts__map {
     width: 399px;
     height: 522px;
-  }
-  .map .map-cat {
-    top: 209px;
-    left: 160px;
   }
   .footer-wrapper {
     padding-top: 39px;
@@ -1922,13 +1913,9 @@ fieldset {
   .address-wrapper .block {
     margin-top: 15px;
   }
-  .map {
+  .contacts__map {
     width: 798px;
     height: 580px;
-  }
-  .map .map-cat {
-    top: 240px;
-    left: 247px;
   }
   .footer-wrapper {
     padding-left: 198px;
