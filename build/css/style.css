@@ -1075,8 +1075,6 @@ fieldset {
 .room-cart .cart-param .pink {
   width: 290px;
   height: 50px;
-  padding-left: 76px;
-  padding-top: 13px;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -1171,7 +1169,6 @@ fieldset {
 .modal-reservation {
   position: fixed;
   width: 290px;
-  height: 656px;
   top: 0;
   left: calc(50% - 290px / 2);
   padding: 50px 15px;
@@ -1217,8 +1214,8 @@ fieldset {
   margin-top: 26px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 20px;
 }
 .modal-reservation .form-input {
   position: relative;
@@ -1226,7 +1223,7 @@ fieldset {
 }
 .modal-reservation .form-input .input-text {
   width: 260px;
-  height: 52px;
+  height: 32px;
   padding-left: 20px;
   border: 1px solid #D7D7D7;
   -webkit-box-sizing: border-box;
@@ -1272,7 +1269,6 @@ fieldset {
 }
 .price-controls .form-input input {
   width: 107px;
-  height: 52px;
   padding-left: 15px;
   margin-left: 5px;
   border: 1px solid #D7D7D7;
@@ -1752,6 +1748,16 @@ fieldset {
   }
   .modal-reservation {
     top: 70px;
+  }
+  .modal-reservation h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .modal-reservation .form-input .input-text {
+    height: 52px;
+  }
+  .price-controls .form-input input {
+    height: 52px;
   }
   .modal-reservation {
     width: 502px;

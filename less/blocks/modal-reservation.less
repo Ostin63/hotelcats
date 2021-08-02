@@ -1,7 +1,6 @@
 .modal-reservation {
   position: fixed;
   width: 290px;
-  height: 656px;
   top: 0;
   left: calc(50% - 290px / 2);
   padding: 50px 15px;
@@ -11,9 +10,11 @@
   box-sizing: border-box;
   z-index: 15;
 
-  @media @tablet-widths{
+  @media @tablet-widths {
     top: 70px;
-  } .reservation-close {
+  }
+
+  .reservation-close {
     position: relative;
     left: 240px;
     width: 16px;
@@ -49,8 +50,13 @@
     margin-top: 26px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 20px;
+
+    @media @tablet-widths {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   .form-input {
@@ -59,12 +65,16 @@
 
     .input-text {
       width: 260px;
-      height: 52px;
+      height: 32px;
       padding-left: 20px;
       border: 1px solid #D7D7D7;
       box-sizing: border-box;
       border-radius: 25px;
       outline: none;
+
+      @media @tablet-widths {
+        height: 52px;
+      }
 
       &::placeholder {
         color: @color-black;
@@ -97,13 +107,16 @@
 
     input {
       width: 107px;
-      height: 52px;
       padding-left: 15px;
       margin-left: 5px;
       border: 1px solid #D7D7D7;
       box-sizing: border-box;
       border-radius: 25px;
       outline: none;
+
+      @media @tablet-widths {
+        height: 52px;
+      }
     }
   }
 }
